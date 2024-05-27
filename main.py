@@ -35,7 +35,7 @@ tim.hideturtle()
 screen.bgpic('inde16.gif')
 stateNum = len(stateList)
 while True and stateNum > 0:
-    inputText = screen.textinput('State', 'Enter the state').lower()
+    inputText = screen.textinput(f'State {stateNum}/{len(stateList)}', 'Enter the state').lower()
     if inputText in stateList:
         stateNum -= 1
         indx = stateList.index(inputText)
